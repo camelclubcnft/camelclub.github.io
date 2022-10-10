@@ -57,7 +57,7 @@ a{
 
 .chosen-season{
   background-color: #d19d5d;
-
+  color: black;
 }
 
 a.anchor {
@@ -172,15 +172,14 @@ l ol, ol ul, ul ol, ul ul {
     color: white;
   }
 
-  .camel, .chosen-season{
-    background-color: #c78c2d;
-
-  }
+  /* .white{
+    background-color: #d4c3b4;
+  } */
 }
 
 @media (prefers-color-scheme: light) {
   body{
-    background-color:#e5bf79;
+    background-color:#f8d4ac;
   }
 
   #landing-text{

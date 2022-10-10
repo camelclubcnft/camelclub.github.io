@@ -13,7 +13,11 @@ $(document).ready(function () {
     }, function () {
       $(".scrolling").css("-webkit-animation-play-state", "running");
   });
-
+  
+  $("#scroller").click(function () {
+    $(".scrolling").css("-webkit-animation-play-state", "running");
+  });
+  
   $(".var-season").click(function () {
     const elmId = $(this).attr("id");
     $("#season-img").attr("src", "Media/" + elmId + ".png");
