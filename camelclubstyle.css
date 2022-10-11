@@ -209,6 +209,10 @@ l ol, ol ul, ul ol, ul ul {
   .form-inline{
     justify-content: center;
   }
+
+  #theteam{
+    display: none;
+  }
 }
 
 @media (max-width: 400px) {
