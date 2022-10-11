@@ -31,7 +31,7 @@ a{
 }
 
 .black{
-  background-color: rgb(22, 22, 21);
+  background-color: #161615;
   color: white;
 }
 
@@ -164,7 +164,7 @@ l ol, ol ul, ul ol, ul ul {
 
 @media (prefers-color-scheme: dark) {
   body{
-    background-color: #20232b;
+    background-color:#161615;
   }
 
   #landing-text{
