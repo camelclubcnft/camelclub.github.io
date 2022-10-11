@@ -31,11 +31,6 @@ a:hover {
   color: gray;
 }
 
-.lightfwwhite{
-  font-weight: 300;
-  color: white;
-}
-
 .black{
   background-color: #161615;
   color: white;
@@ -61,7 +56,7 @@ a:hover {
 }
 
 .border-element{
-  border: #9f6719;
+  border: white;
   border-style: solid;
   border-width: .5rem;
 }
@@ -210,9 +205,9 @@ l ol, ol ul, ul ol, ul ul {
     justify-content: center;
   }
 
-  #theteam{
+  /* #theteam{
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 400px) {
