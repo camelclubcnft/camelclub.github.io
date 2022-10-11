@@ -14,10 +14,6 @@ $(document).ready(function () {
       $(".scrolling").css("-webkit-animation-play-state", "running");
   });
   
-  $("#scroller").click(function () {
-    $(".scrolling").css("-webkit-animation-play-state", "running");
-  });
-  
   $(".var-season").click(function () {
     const elmId = $(this).attr("id");
     $("#season-img").attr("src", "Media/" + elmId + ".png");
@@ -29,7 +25,7 @@ $(document).ready(function () {
   $(".var-buy").hover(function () {
       $(this).css("background", "white");
     },function () {
-      $(this).css("background", "#c8a36f");
+      $(this).css("background", "#bc873c");
   });
 
   $(".var-copy").click(function () {
