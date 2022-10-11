@@ -15,11 +15,11 @@ $(document).ready(function () {
   });
   
   $(".var-season").click(function () {
-    const elmId = $(this).attr("id");
-    $("#season-img").attr("src", "Media/" + elmId + ".png");
-    $("#season-img").attr("alt", "Sample " + elmId + " Camel");
-    $(".var-season").removeClass("chosen-season");
-    $(this).addClass("chosen-season");
+    const elmID = $(this).attr("id");
+    $("#season-img").attr("src", "Media/" + elmID + ".png");
+    $("#season-img").attr("alt", "Sample " + elmID + " Camel");
+    $(".var-season").removeClass("active-season");
+    $(this).addClass("active-season");
   });
 
   $(".var-buy").hover(function () {

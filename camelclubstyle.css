@@ -41,6 +41,8 @@ a:hover {
   color: #161615;
 }
 
+
+
 .camel{
   background-color:#bc873c;
   color: #161615;
@@ -49,9 +51,11 @@ a:hover {
   color:#bc873c;
 }
 
-.chosen-season{
-  background-color:#bc873c;
+.active-season{
+  background-color: #d19137;
+  background-image: radial-gradient(#e9a64e,#d19137);
   color: #161615;
+
 }
 
 a.anchor {
