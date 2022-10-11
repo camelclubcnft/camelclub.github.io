@@ -20,6 +20,11 @@ a{
   color: #bc873c;
 }
 
+a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .lightfw{
   font-weight: 300;
   color: gray;
@@ -129,7 +134,7 @@ l ol, ol ul, ul ol, ul ul {
 
 #landing{
   height: 30vw;
-  min-height: 200px;
+  min-height: 250px;
 }
 
 .img_container {
