@@ -51,14 +51,20 @@ a:hover {
 
 .active-season{
   background-color: #e9a64e;
-  background-image: radial-gradient(#e9a64e,#bd7d23);
+  background-image: radial-gradient(#e9a64e, #bd7d23);
   color: #161615;
 }
 
 .border-element{
-  border: #e9a64e;
+  border: #e3963133;
   border-style: solid;
   border-width: .5rem;
+}
+
+.thin-border{
+  border-color: #e3963133;
+  border-style: solid;
+  border-width: .1rem;
 }
 
 a.anchor {
