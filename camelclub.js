@@ -55,4 +55,4 @@ $(document).ready(function () {
     window.open(
     "https://cnft.io/project/camel-club", "_blank");
   });
-  });
+});
