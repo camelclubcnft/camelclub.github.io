@@ -196,30 +196,6 @@ l ol, ol ul, ul ol, ul ul {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .side-collapse-container{
-      width:100%;
-      position:relative;
-      right:0;
-      transition:right .4s;
-  }
-  .side-collapse-container.out{
-      right:200px;
-  }
-  .side-collapse {
-      top:50px;
-      bottom:0;
-      right:0;
-      width:200px;
-      position:fixed;
-      overflow:hidden;
-      transition:width .4s;
-  }
-  .side-collapse.in {
-      width:0;
-  }
-}
-
 @media (max-width: 767px) {
   .navbar-collapse {
     text-align: center;
