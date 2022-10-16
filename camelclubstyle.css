@@ -50,9 +50,21 @@ a:hover {
   color:#e9a64e;
 }
 
-.active-season{
+.active-OG{
   background-color: #e9a64e;
-  background-image: radial-gradient(#e9a64e, #bd7d23);
+  background-image: radial-gradient(#e98f4e, #bd6323);
+  color: #161615;
+}
+
+.active-WOF{
+  background-color: #4ea8e9;
+  background-image: radial-gradient(#3e80be, #275077);
+  color: #161615;
+}
+
+.active-3D{
+  background-color: #e9a64e;
+  background-image: radial-gradient(#74937c, #475f4d);
   color: #161615;
 }
 
@@ -162,10 +174,10 @@ l ol, ol ul, ul ol, ul ul {
 
 @keyframes slide {
   from {
-    transform: translateX(-100%);
+    transform: translateX(0);
   }
   to { 
-    transform: translateX(0%);
+    transform: translateX(-100%);
   }
 }
 

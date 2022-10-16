@@ -18,8 +18,9 @@ $(document).ready(function () {
     const elmID = $(this).attr("id");
     $("#season-img").attr("src", "Media/" + elmID + ".png");
     $("#season-img").attr("alt", "Sample " + elmID + " Camel");
-    $(".var-season").removeClass("active-season");
-    $(this).addClass("active-season");
+    $(".var-season").removeClass("active-OG active-WOF active-3D");
+    
+    $(this).addClass("active-" + elmID);
   });
 
   $(".var-buy").hover(function () {
