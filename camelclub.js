@@ -7,7 +7,7 @@ $(document).ready(function () {
       $(".scrolling").css("-webkit-animation-play-state", "paused");
     }
 
-    if($(document).scrollTop() > 10){
+    if($(document).scrollTop() > 50){
       $('.arrows').css({'display': 'none'});
     } else{
       $('.arrows').css({'display': 'block'});
