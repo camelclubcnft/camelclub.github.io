@@ -46,7 +46,7 @@ $(document).ready(function () {
   $(".var-buy").hover(function () {
       $(this).css("background", "white");
     },function () {
-      $(this).css("background", "#bc873c");
+      $(this).css("background", "var(--camel)");
   });
 
   $(".var-copy").click(function () {
