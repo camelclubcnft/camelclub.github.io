@@ -162,7 +162,7 @@ l ol, ol ul, ul ol, ul ul {
 
 #spacer{
   height: 10vh;
-  min-height: 50px;
+  min-height: 56px;
   /* background-color: #ecc67575; */
 }
 
@@ -177,7 +177,6 @@ l ol, ol ul, ul ol, ul ul {
 
 #landingscroller{
   height: 50vh;
-  min-height: 200px;
   /* background-color: rgba(255, 0, 255, 0.493); */
 }
 
@@ -191,7 +190,7 @@ l ol, ol ul, ul ol, ul ul {
   position: absolute;
   left: 50%;
   margin-left: -30px;
-  bottom: 40px;
+  bottom: 50px;
 }
 
 .arrows path {
@@ -241,7 +240,7 @@ l ol, ol ul, ul ol, ul ul {
     list-style: none;
     animation: slide 80s linear infinite;
     display: inline-block;
-    padding-right: 10px;
+    /* padding-right: 10px; */
   }
   @keyframes arrow{
     0% {opacity:0}
@@ -320,5 +319,20 @@ l ol, ol ul, ul ol, ul ul {
 
   #logo{
     height: 32px;
+  }
+
+  #spacer{
+    min-height: 32px;
+  }
+
+  #landing{
+    height: 40vh;
+  }
+  #landingscroller{
+    height: 50vh;
+  }
+
+  .arrows {
+    bottom: 60px;
   }
 }
