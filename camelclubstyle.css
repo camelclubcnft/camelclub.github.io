@@ -240,7 +240,7 @@ l ol, ol ul, ul ol, ul ul {
     list-style: none;
     animation: slide 80s linear infinite;
     display: inline-block;
-    padding-right: 10px;
+    /* padding-right: 10px; */
   }
   @keyframes arrow{
     0% {opacity:0}
