@@ -13,6 +13,20 @@ $(document).ready(function () {
     }, function () {
       $(".scrolling").css("-webkit-animation-play-state", "running");
   });
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting){
+        entry.target.classList.add("show");
+      } else{
+        entry.target.classList.remove("show");
+      }
+    });
+  });
+
+  const hiddenElements = document.querySelectorAll(".hidden1");
+  hiddenElements.forEach((el) => observer.observe(el));
+
   
   $(".var-season").click(function () {
     const elmID = $(this).attr("id");
