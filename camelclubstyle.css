@@ -161,19 +161,21 @@ l ol, ol ul, ul ol, ul ul {
 }
 
 #spacer{
-  min-height: 150px;
+  height: 20vh;
 }
 
 #landing{
   display: flex;
   color: white;
-  height: 50vh;
+  height: 40vh;
+  min-height: 200px;
   align-items: center;
   justify-content: center;
 }
 
 #scroller{
-  height: 30vh;
+  height: 40vh;
+  min-height: 200px;
 }
 
 .hidden1{
