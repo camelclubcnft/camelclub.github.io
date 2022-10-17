@@ -191,7 +191,7 @@ l ol, ol ul, ul ol, ul ul {
   position: absolute;
   left: 50%;
   margin-left: -30px;
-  bottom: 20px;
+  bottom: 40px;
 }
 
 .arrows path {
@@ -208,8 +208,8 @@ l ol, ol ul, ul ol, ul ul {
 
 .hidden1{
   opacity: 0;
-  transform: translateX(-25%);
-  transition: transform 1s, color 400ms;
+  transform: translateX(-10%);
+  transition: transform 500ms, color 400ms;
 }
 
 .show{
@@ -250,7 +250,7 @@ l ol, ol ul, ul ol, ul ul {
     100% {opacity:0}
   }
 
-  @-webkit-keyframes arrow /*Safari and Chrome*/{
+  @-webkit-keyframes arrow{
     0% {opacity:0}
     40% {opacity:1}
     80% {opacity:0}
@@ -311,10 +311,6 @@ l ol, ol ul, ul ol, ul ul {
   .form-inline{
     justify-content: center;
   }
-
-  /* #theteam{
-    display: none;
-  } */
 }
 
 @media (max-width: 400px) {
