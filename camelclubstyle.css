@@ -57,14 +57,14 @@ a:hover {
 }
 
 .active-WOF{
-  background-color: #5481ab;
-  background-image: radial-gradient(#a16f58, #6c4330);
+  background-color: #84543b;
+  background-image: radial-gradient(#84543b, #6c4330);
   color: #161615;
 }
 
 .active-3D{
-  background-color: #62856a;
-  background-image: radial-gradient(#705c50, #5b493f);
+  background-color: #61544a;
+  background-image: radial-gradient(#61544a, #564537);
   color: #161615;
 }
 
