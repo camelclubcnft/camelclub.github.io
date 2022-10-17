@@ -196,19 +196,19 @@ l ol, ol ul, ul ol, ul ul {
 .arrows path {
   stroke: #bc873c;
   fill: transparent;
-  stroke-width: 1px;  
+  stroke-width: 1px;
   animation: arrow 2s infinite;
   -webkit-animation: arrow 2s infinite; 
 }
 
 #season-img{
- max-height: 400px;
+  max-height: 400px;
 }
 
 .hidden1{
   opacity: 0;
   transform: translateX(-10%);
-  transition: transform 500ms, color 400ms;
+  transition: transform 500ms, color 400ms, background-color 400ms;
 }
 
 .show{
@@ -271,15 +271,24 @@ l ol, ol ul, ul ol, ul ul {
     -webkit-animation-delay:0s;
   }
 
+  @keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
 
-@keyframes slide {
-  from {
-    transform: translateX(0);
+  @keyframes fade-out {
+    from {opacity: 1}
+    to {opacity: 0}
   }
-  to { 
-    transform: translateX(-100%);
+
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to { 
+      transform: translateX(-100%);
+    }
   }
-}
 }
 
 @media (prefers-color-scheme: dark) {

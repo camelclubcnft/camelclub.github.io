@@ -40,7 +40,6 @@ $(document).ready(function () {
     $("#season-img").attr("src", "Media/" + elmID + ".png");
     $("#season-img").attr("alt", "Sample " + elmID + " Camel");
     $(".var-season").removeClass("active-OG active-WOF active-3D");
-    
     $(this).addClass("active-" + elmID);
   });
 
