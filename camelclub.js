@@ -43,7 +43,7 @@ $(document).ready(function () {
     $(this).addClass("active-" + elmID);
   });
 
-  $(".var-buy").hover(function () {
+  $(".bg-hover").hover(function () {
       $(this).css("background", "white");
     },function () {
       $(this).css("background", "var(--camel)");
