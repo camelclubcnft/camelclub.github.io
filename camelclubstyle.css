@@ -162,10 +162,12 @@ l ol, ol ul, ul ol, ul ul {
 
 #spacer{
   height: 20vh;
+  /* background-color: #ecc67575; */
 }
 
 #landing{
   display: flex;
+  /* background-color: #356c3090; */
   color: white;
   height: 40vh;
   min-height: 200px;
@@ -173,15 +175,41 @@ l ol, ol ul, ul ol, ul ul {
   justify-content: center;
 }
 
-#scroller{
+#landingscroller{
   height: 40vh;
   min-height: 200px;
+  /* background-color: rgba(255, 0, 255, 0.493) */
+}
+
+#scroller{
+  /* background-color: #ffe9c43f; */
+}
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 20px;
+}
+
+.arrows path {
+  stroke: #bc873c;
+  fill: transparent;
+  stroke-width: 1px;  
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; 
+}
+
+#season-img{
+ max-height: 400px;
 }
 
 .hidden1{
   opacity: 0;
   transform: translateX(-25%);
-  transition: all 1s;
+  transition: transform 1s, color 250ms, background-color 250ms;
 }
 
 /* .hidden1:nth-child(1){
@@ -197,7 +225,6 @@ l ol, ol ul, ul ol, ul ul {
 
 .show{
   opacity: 1;
-  filter: blur(0);
   transform: translateX(0);
 }
 
@@ -206,18 +233,13 @@ l ol, ol ul, ul ol, ul ul {
   white-space: nowrap;
 }
 
-@keyframes slide {
-  from {
-    transform: translateX(0);
-  }
-  to { 
-    transform: translateX(-100%);
-  }
-}
-
 @media (prefers-reduced-motion) {
   .scrolling {
     animation: none;
+  }
+
+  .scrolling:nth-child(2){
+    display: none;
   }
 
   .hidden1{
@@ -233,6 +255,44 @@ l ol, ol ul, ul ol, ul ul {
     display: inline-block;
     padding-right: 10px;
   }
+  @keyframes arrow{
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+  }
+
+  @-webkit-keyframes arrow /*Safari and Chrome*/{
+    0% {opacity:0}
+    40% {opacity:1}
+    80% {opacity:0}
+    100% {opacity:0}
+  }
+
+  .arrows path.a1 {
+    animation-delay:-1s;
+    -webkit-animation-delay:-1s;
+  }
+
+  .arrows path.a2 {
+    animation-delay:-0.5s;
+    -webkit-animation-delay:-0.5s; 
+  }
+
+  .arrows path.a3 { 
+    animation-delay:0s;
+    -webkit-animation-delay:0s;
+  }
+
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to { 
+    transform: translateX(-100%);
+  }
+}
 }
 
 @media (prefers-color-scheme: dark) {

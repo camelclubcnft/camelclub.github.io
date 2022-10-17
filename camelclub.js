@@ -6,6 +6,13 @@ $(document).ready(function () {
     } else{
       $(".scrolling").css("-webkit-animation-play-state", "paused");
     }
+
+    if($(document).scrollTop() > 1){
+      $('.arrows').css({'display': 'none'});
+    } else{
+      $('.arrows').css({'display': 'block'});
+    }
+
   });
 
   $("#scroller").hover(function () {
@@ -27,7 +34,6 @@ $(document).ready(function () {
   const hiddenElements = document.querySelectorAll(".hidden1");
   hiddenElements.forEach((el) => observer.observe(el));
 
-  
   $(".var-season").click(function () {
     const elmID = $(this).attr("id");
     $("#season-img").attr("src", "Media/" + elmID + ".png");
