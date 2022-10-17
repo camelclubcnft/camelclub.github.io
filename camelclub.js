@@ -29,6 +29,10 @@ $(document).ready(function () {
       $(this).css("background", "#bc873c");
   });
 
+  $('.var-buy').on('touchstart', function() {
+    $(this).toggleClass("white");
+  });
+
   $(".var-copy").click(function () {
     const elm = $(this).find("input");
     const v = elm.val();

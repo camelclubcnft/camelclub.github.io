@@ -52,19 +52,19 @@ a:hover {
 
 .active-OG{
   background-color: #e9a64e;
-  background-image: radial-gradient(#e98f4e, #b16d3d);
+  background-image: radial-gradient(#ecc675, #c69136);
   color: #161615;
 }
 
 .active-WOF{
   background-color: #5481ab;
-  background-image: radial-gradient(#5481ab, #4681b9);
+  background-image: radial-gradient(#a16f58, #6c4330);
   color: #161615;
 }
 
 .active-3D{
   background-color: #62856a;
-  background-image: radial-gradient(#62856a, #5a7e63);
+  background-image: radial-gradient(#705c50, #5b493f);
   color: #161615;
 }
 
