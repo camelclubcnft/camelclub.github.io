@@ -184,14 +184,14 @@ l ol, ol ul, ul ol, ul ul {
 #landing{
   display: flex;
   color: white;
-  height: 40vh;
+  height: 50vh;
   align-items: center;
   justify-content: center;
   /* background-color: #356c3090; */
 }
 
 #landingscroller{
-  height: 50vh;
+  height: 40vh;
   /* background-color: rgba(255, 0, 255, 0.493); */
 }
 
@@ -337,7 +337,7 @@ l ol, ol ul, ul ol, ul ul {
   }
 }
 @media (max-width: 575px) {
-  #spacer{
+  /* #spacer{
     min-height: 32px;
   }
   #landing{
@@ -345,7 +345,7 @@ l ol, ol ul, ul ol, ul ul {
   }
   #landingscroller{
     height: 55vh;
-  }
+  } */
   .arrows {
     bottom: 60px;
   }
