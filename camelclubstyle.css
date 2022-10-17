@@ -207,7 +207,7 @@ l ol, ol ul, ul ol, ul ul {
 .hidden1{
   opacity: 0;
   transform: translateX(-15%);
-  transition: transform 1s, color 400ms, background-color 400ms;
+  transition: transform 500ms, color 400ms, background-color 400ms;
 }
 
 .show{
