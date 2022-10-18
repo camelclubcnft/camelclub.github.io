@@ -226,13 +226,11 @@ l ol, ol ul, ul ol, ul ul {
 }
 
 .hidden1{
-  opacity: 0;
   transform: scale(.9);
   transition: transform 500ms, color 400ms, background-color 400ms;
 }
 
 .show{
-  opacity: 1;
   transform: scale(1);
 }
 
