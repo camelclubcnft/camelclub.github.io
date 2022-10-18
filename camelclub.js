@@ -43,7 +43,7 @@ $(document).ready(function () {
     $(this).addClass("active-" + elmID);
   });
 
-  // $(".grow-button").hover(function () {
+  // $(".grow-button").touchstart(function () {
   //     $(this).css("background", "white");
   //   },function () {
   //     $(this).css("background", "var(--camel)");

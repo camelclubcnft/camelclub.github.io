@@ -227,7 +227,6 @@ l ol, ol ul, ul ol, ul ul {
 
 .hidden1{
   opacity: 0;
-  transform: translateY(-10%);
   transform: scale(.9);
   transition: transform 500ms, color 400ms, background-color 400ms;
 }
@@ -235,7 +234,6 @@ l ol, ol ul, ul ol, ul ul {
 .show{
   opacity: 1;
   transform: scale(1);
-  transform: translateY(0);
 }
 
 .img_container {
