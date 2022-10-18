@@ -43,11 +43,11 @@ $(document).ready(function () {
     $(this).addClass("active-" + elmID);
   });
 
-  $(".bg-hover").hover(function () {
-      $(this).css("background", "white");
-    },function () {
-      $(this).css("background", "var(--camel)");
-  });
+  // $(".grow-button").hover(function () {
+  //     $(this).css("background", "white");
+  //   },function () {
+  //     $(this).css("background", "var(--camel)");
+  // });
 
   $(".var-copy").click(function () {
     const elm = $(this).find("input");
