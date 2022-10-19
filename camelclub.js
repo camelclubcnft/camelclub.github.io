@@ -49,7 +49,7 @@ $(document).ready(function () {
     $(this).addClass("active-" + elmID);
   });
 
-  // $(".grow-button").touchstart(function () {
+  // $(".grow-button").click(function () {
   //     $(this).css("background", "white");
   //   },function () {
   //     $(this).css("background", "var(--camel)");
@@ -67,19 +67,4 @@ $(document).ready(function () {
     elm.val(v);
     },750); 
   });
-
-  // $("#jstore").bind("keydown click", () => {
-  //   window.open(
-  //   "https://www.jpg.store/collection/camelclub", "_blank");
-  // });
-
-  // $("#ghouse").bind("keydown click", () => {
-  //   window.open(
-  //   "https://www.genesishouse.io/collections/336", "_blank");
-  // });
-
-  // $("#cnft").bind("keydown click", () => {
-  //   window.open(
-  //   "https://cnft.io/project/camel-club", "_blank");
-  // });
 });

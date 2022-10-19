@@ -365,21 +365,12 @@ ul.timeline{
   }
 }
 
-@media(max-height: 650px){
+@media (max-height: 650px){
   .arrows{
     visibility: hidden;
   }
 }
 
-@media (max-width: 767px) {
-  .navbar-collapse {
-    text-align: center;
-  }   
-
-  .form-inline{
-    justify-content: center;
-  }
-}
 @media (max-height: 450px) {
   #spacer{
     min-height: 60px;
@@ -392,8 +383,18 @@ ul.timeline{
   #landingscroller{
     margin-top: 2rem;
   }
-
 }
+
+@media (max-width: 767px) {
+  .navbar-collapse {
+    text-align: center;
+  }   
+
+  .form-inline{
+    justify-content: center;
+  }
+}
+
 @media (max-width: 400px) {
   .card-body {
     padding: 0.5rem;
