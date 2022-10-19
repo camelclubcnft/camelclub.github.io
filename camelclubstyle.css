@@ -254,6 +254,10 @@ ul.timeline{
   /* background-color: #356c3090; */
 }
 
+#joindiscord{
+  max-width: 300px;
+}
+
 #landingscroller{
   height: 45vh;
   /* background-color: rgba(255, 0, 255, 0.493); */
@@ -376,16 +380,22 @@ ul.timeline{
     justify-content: center;
   }
 }
-@media (max-width: 575px) {
-  /* #spacer{
-    min-height: 32px;
+@media (max-height: 450px) {
+  #spacer{
+    min-height: 60px;
   }
+
+  #logo{
+    height: 32px;
+  }
+
   #landing{
-    height: 35vh;
+    margin-top: 2rem;
   }
+  
   #landingscroller{
-    height: 55vh;
-  } */
+    margin-top: 2rem;
+  }
 
 }
 @media (max-width: 400px) {
