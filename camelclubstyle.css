@@ -36,6 +36,10 @@ a:hover {
   text-decoration: none;
 }
 
+.navbar-toggler {
+  border: none;
+} 
+
 .custom-toggler{
   display: flex;
   flex-direction: column;
@@ -45,7 +49,7 @@ a:hover {
 }
 
 .bar {
-  height: 2px;
+  height: 2.5px;
   width: 25px;
   background-color: var(--camel);
   transition: all 100ms ease-in-out;
@@ -54,7 +58,7 @@ a:hover {
 
 .x:nth-of-type(1) {
   transition: all 100ms ease-in-out;
-  margin-left: .5rem;
+  margin-left: .7rem;
   scale: .9;
   transform: rotate(45deg);
   transform-origin: top left;
@@ -69,16 +73,29 @@ a:hover {
 
 .x:nth-of-type(3) {
   transition: all 100ms ease-in-out;
-  margin-left: .5rem;
+  margin-left: .7rem;
   scale: .9;
   transform: rotate(-45deg);
   transform-origin: bottom left;
   width: 25px;
 }
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 40px;
+}
 
-.custom-toggler.navbar-toggler {
-  border: none;
-} 
+.arrows path {
+  stroke: var(--camel);
+  fill: transparent;
+  stroke-width: 1px;
+  stroke-linecap: round;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite; 
+}
 
 .rounded-element{
   border-radius: 20px;
@@ -201,55 +218,6 @@ ul.timeline{
   max-width: 600px;
 }
 
-#logo{
-  max-height: 48px;
-}
-
-#spacer{
-  height: 10vh;
-  /* background-color: #ecc67575; */
-}
-
-#landing{
-  display: flex;
-  color: white;
-  height: 45vh;
-  align-items: center;
-  justify-content: center;
-  /* background-color: #356c3090; */
-}
-
-#landingscroller{
-  height: 45vh;
-  /* background-color: rgba(255, 0, 255, 0.493); */
-}
-
-/* #scroller{
-  background-color: #ecc67561;
-} */
-
-.arrows {
-  width: 60px;
-  height: 72px;
-  position: absolute;
-  left: 50%;
-  margin-left: -30px;
-  bottom: 40px;
-}
-
-.arrows path {
-  stroke: var(--camel);
-  fill: transparent;
-  stroke-width: 1px;
-  stroke-linecap: round;
-  animation: arrow 2s infinite;
-  -webkit-animation: arrow 2s infinite; 
-}
-
-#season-img{
-  max-height: 400px;
-}
-
 .grow-button:hover, .grow-button:active, .grow-button:focus{
   transform: scale(1.1);
   background-color: white;
@@ -268,6 +236,35 @@ ul.timeline{
 .img_container {
   overflow: hidden;
   white-space: nowrap;
+}
+
+#logo{
+  max-height: 48px;
+}
+
+#spacer{
+  height: 10vh;
+  /* background-color: #ecc67575; */
+}
+
+#landing{
+  display: flex;
+  color: white;
+  height: 45vh;
+  /* background-color: #356c3090; */
+}
+
+#landingscroller{
+  height: 45vh;
+  /* background-color: rgba(255, 0, 255, 0.493); */
+}
+
+/* #scroller{
+  background-color: #ecc67561;
+} */
+
+#season-img{
+  max-height: 400px;
 }
 
 @media (prefers-reduced-motion) {
