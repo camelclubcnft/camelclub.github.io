@@ -33,12 +33,6 @@ $(document).ready(function () {
 
   });
 
-  // $("#scroller").hover(function () {
-  //     $(".scrolling").css("-webkit-animation-play-state", "paused");
-  //   }, function () {
-  //     $(".scrolling").css("-webkit-animation-play-state", "running");
-  // });
-
   $("button.navbar-toggler.custom-toggler").click(function(){
     $(".bar").toggleClass("x");
   });

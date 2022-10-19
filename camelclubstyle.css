@@ -387,6 +387,9 @@ ul.timeline{
 }
 
 @media (max-width: 767px) {
+  nav{
+    background-color: #161615;
+  }
   .navbar-collapse {
     text-align: center;
   }   
