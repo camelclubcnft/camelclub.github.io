@@ -24,9 +24,9 @@ $(document).ready(function () {
     }
 
     if($(document).scrollTop() > 50){
-      $('.arrows').css({'display': 'none'});
+      $(".arrows").css({"display": "none"});
     } else{
-      $('.arrows').css({'display': 'block'});
+      $(".arrows").css({"display": "block"});
     }
 
   });
@@ -36,6 +36,10 @@ $(document).ready(function () {
   //   }, function () {
   //     $(".scrolling").css("-webkit-animation-play-state", "running");
   // });
+
+  $("button.navbar-toggler.custom-toggler").click(function(){
+    $(".bar").toggleClass("x");
+  });
 
   $(".var-season").click(function () {
     const elmID = $(this).attr("id");
