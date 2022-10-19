@@ -120,10 +120,6 @@ a:hover {
   color: white;
 }
 
-.nav-color{
-  background-color: var(--black);
-}
-
 .white{
   background-color: white;
   color: var(--black);
@@ -367,10 +363,6 @@ ul.timeline{
 
   #landing-text{
     color: var(--black);
-  }
-
-  nav{
-    background-color: var(--black);
   }
 }
 
