@@ -25,8 +25,10 @@ $(document).ready(function () {
 
     if($(document).scrollTop() > 50){
       $(".arrows").css({"display": "none"});
+      $("nav").addClass("black");
     } else{
       $(".arrows").css({"display": "block"});
+      $("nav").removeClass("black");
     }
 
   });
