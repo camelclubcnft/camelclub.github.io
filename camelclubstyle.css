@@ -89,7 +89,7 @@ a:hover {
   border: .1rem solid #3e2f1c;
 }
 
-.thin-border:hover{
+.thin-border:hover, .thin-border:active, .thin-border:focus{
   border-color: #ffffff50;
 }
 
@@ -220,7 +220,7 @@ l ol, ol ul, ul ol, ul ul {
   max-height: 400px;
 }
 
-.grow-button:hover, .grow-button:active{
+.grow-button:hover, .grow-button:active, .grow-button:focus{
   transform: scale(1.1);
   background-color: white;
 }
@@ -253,7 +253,7 @@ l ol, ol ul, ul ol, ul ul {
     transition: none;
   }
 
-  .grow-button:hover{
+  .grow-button:hover, .grow-button:active, .grow-button:focus{
     transform: none;
   }
 }
