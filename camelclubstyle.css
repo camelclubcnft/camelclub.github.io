@@ -23,6 +23,10 @@ li{
   padding-bottom: 1rem;
 }
 
+ul ul {
+  padding: 0 1rem;
+}
+
 a{
   color: var(--camel);
 }
@@ -32,8 +36,21 @@ a:hover {
   text-decoration: none;
 }
 
-.card{
-  cursor: pointer;
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(188, 135, 60)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border: none;
+} 
+
+.rounded-element{
+  border-radius: 20px;
+}
+
+.rounded-top-element{
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .pointer{
@@ -64,7 +81,7 @@ a:hover {
   color: var(--camel)
 }
 
-var-season{
+.var-season{
   cursor: pointer;
 }
 .active-OG{
@@ -125,10 +142,6 @@ ul.timeline{
   padding-right: 0%;
 }
 
-l ol, ol ul, ul ol, ul ul {
-    padding: 0 1rem;
-}
-
 .timeline .timeline-item {
   position: relative;
 }
@@ -147,28 +160,6 @@ l ol, ol ul, ul ol, ul ul {
   width: 11px;
   content: "";
 }
-
-.rounded-element{
-  border-radius: 20px;
-}
-
-.rounded-top-element{
-  border-top-right-radius: 20px;
-  border-top-left-radius: 20px;
-}
-
-.rounded-bottom-element{
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-}
-
-.custom-toggler .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(188, 135, 60)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.custom-toggler.navbar-toggler {
-  border: none;
-} 
 
 .box-text{
   max-width: 600px;
