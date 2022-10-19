@@ -120,6 +120,10 @@ a:hover {
   color: white;
 }
 
+.nav-color{
+  background-color: var(--black);
+}
+
 .white{
   background-color: white;
   color: var(--black);
@@ -364,6 +368,10 @@ ul.timeline{
   #landing-text{
     color: var(--black);
   }
+
+  nav{
+    background-color: var(--black);
+  }
 }
 
 @media (max-height: 650px){
@@ -387,9 +395,6 @@ ul.timeline{
 }
 
 @media (max-width: 767px) {
-  nav{
-    background-color: #161615;
-  }
   .navbar-collapse {
     text-align: center;
   }   

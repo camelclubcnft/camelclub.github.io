@@ -23,12 +23,12 @@ $(document).ready(function () {
       $(".scrolling").css("-webkit-animation-play-state", "paused");
     }
 
-    if($(document).scrollTop() > 50){
+    if($(this).scrollTop() > 50){
       $(".arrows").css({"display": "none"});
-      $("nav").addClass("black");
+      $("nav").addClass("nav-color");
     } else{
       $(".arrows").css({"display": "block"});
-      $("nav").removeClass("black");
+      $("nav").removeClass("nav-color");
     }
 
   });
