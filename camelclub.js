@@ -41,7 +41,7 @@ $(document).ready(function () {
     $(".bar").toggleClass("x");
   });
 
-  $(".var-season").click(function () {
+  $(".var-season").bind("keydown click", function () {
     const elmID = $(this).attr("id");
     $("#season-img").attr("src", "Media/" + elmID + ".png");
     $("#season-img").attr("alt", "Sample " + elmID + " Camel");
@@ -55,7 +55,7 @@ $(document).ready(function () {
   //     $(this).css("background", "var(--camel)");
   // });
 
-  $(".var-copy").click(function () {
+  $(".var-copy").bind("keydown click", function () {
     const elm = $(this).find("input");
     const v = elm.val();
 
@@ -68,18 +68,18 @@ $(document).ready(function () {
     },750); 
   });
 
-  $("#jstore").click(() => {
-    window.open(
-    "https://www.jpg.store/collection/camelclub", "_blank");
-  });
+  // $("#jstore").bind("keydown click", () => {
+  //   window.open(
+  //   "https://www.jpg.store/collection/camelclub", "_blank");
+  // });
 
-  $("#ghouse").click(() => {
-    window.open(
-    "https://www.genesishouse.io/collections/336", "_blank");
-  });
+  // $("#ghouse").bind("keydown click", () => {
+  //   window.open(
+  //   "https://www.genesishouse.io/collections/336", "_blank");
+  // });
 
-  $("#cnft").click(() => {
-    window.open(
-    "https://cnft.io/project/camel-club", "_blank");
-  });
+  // $("#cnft").bind("keydown click", () => {
+  //   window.open(
+  //   "https://cnft.io/project/camel-club", "_blank");
+  // });
 });
