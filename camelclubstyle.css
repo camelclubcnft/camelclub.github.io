@@ -64,6 +64,9 @@ a:hover {
   color: var(--camel)
 }
 
+var-season{
+  cursor: pointer;
+}
 .active-OG{
   background-color: #e9a64e;
   background-image: radial-gradient(#ecc675, #c69136);

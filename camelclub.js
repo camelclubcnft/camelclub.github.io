@@ -15,11 +15,11 @@ $(document).ready(function () {
 
   });
 
-  $("#scroller").hover(function () {
-      $(".scrolling").css("-webkit-animation-play-state", "paused");
-    }, function () {
-      $(".scrolling").css("-webkit-animation-play-state", "running");
-  });
+  // $("#scroller").hover(function () {
+  //     $(".scrolling").css("-webkit-animation-play-state", "paused");
+  //   }, function () {
+  //     $(".scrolling").css("-webkit-animation-play-state", "running");
+  // });
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
