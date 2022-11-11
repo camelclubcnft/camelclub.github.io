@@ -36,6 +36,10 @@ a:hover {
   text-decoration: none;
 }
 
+.styled{
+  font-family: "Changa One", sans-serif;
+}
+
 .navbar-toggler {
   border: none;
 } 
@@ -160,7 +164,7 @@ a:hover {
 }
 
 .thin-border{
-  border: .1rem solid #3e2f1c;
+  border: .15rem solid #3e2f1c;
 }
 
 .thin-border:hover, .thin-border:active, .thin-border:focus{

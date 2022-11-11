@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#bc873c"/>
+    <link rel="icon" href="Media/camel-logo.png">
+    <title>Camel Club</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Changa+One&family=Merriweather+Sans:wght@300;400&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="camelclubstyle.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark black">
+      <div class="container">
+        <a class="navbar-brand mx-2 p-0" href="#">
+          <img id=logo src="Media/cclogo.svg" alt="Camel Club" height="48px" class="pt-2">
+        </a>
+
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarToggle">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-item p-2 mx-3" href="#ourcaravan">Our Caravan</a>
+            <a class="nav-item p-2 mx-3" href="#roadmap">Roadmap</a>
+            <a class="nav-item p-2 mx-3" href="#trade">Trade</a>
+            <a class="nav-item p-2 mx-3" href="#FAQ">FAQ</a>
+            <div class="form-inline my-0">
+              <a class="nav-item pt-2 pl-2 pr-2 mx-2" href="https://discord.com/invite/m8hsYUJ7" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                  <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                </svg>
+              </a>
+              <a class="nav-item pt-2 pl-2 pr-2 mx-2" href="https://www.twitter.com/camelclubnft" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="spacer"></div>
+    <section id="landing" class="align-items-center m-0 pt-0">
+      <div id="landing-text" class="container text-center mt-md-auto box-text">
+        <h1>Camel Club</h1>
+        <p class="mx-auto">A collection of over 5000 camels that live on the Cardano blockchain. Each camel is completely unique and comes with exclusive membership access to the Camel Club.</p>
+        
+        <a href="https://discord.com/invite/m8hsYUJ7" id="joindiscord" class="d-block mx-auto" target="_blank">
+          <div role="button" tabIndex="0" class="rounded-element camel mb-md-5 grow-button hidden1">
+            <h5>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="var(--black)" class="mx-2 bi bi-discord" viewBox="0 -2.5 16 16">
+                <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+              </svg>
+              Join the Discord
+            </h5>
+          </div>
+        </a>
+      </div>
+    </section>
+    
+    <section id="landingscroller">
+    <section id="scroller" class="img_container">
+      <div class="scrolling">
+        <!-- <img src="Media/4.webp" width="auto" height="180" class="rounded-element px-2"> -->
+        <img src="Media/5.webp" width="auto" height="180" class="rounded-element px-2">
+        <img src="Media/3D4.webp" width="auto" height="180" class="rounded-element px-2">
+        <!-- <img src="Media/6.webp" width="auto" height="180" class="rounded-element px-2"> -->
+        <img src="Media/7.webp" width="auto" height="180" class="rounded-element px-2">
+        <img src="Media/3D12.webp" width="auto" height="180" class="rounded-element px-2">
+        <img src="Media/17.webp" width="auto" height="180" class="rounded-element px-2">
+        <img src="Media/3D10.webp" width="auto" height="180" class="rounded-element px-2">
+        <!-- <img src="Media/9.webp" width="auto" height="180" class="rounded-element px-2"> -->
+        <img src="Media/10.webp" width="auto" height="180" class="rounded-element px-2">
+        <img src="Media/11.webp" width="auto" height="180" class="rounded-element px-2">
+        <img src="Media/3D2.webp" width="auto" height="180" class="rounded-element px-2">
+        <!-- <img src="Media/13.webp" width="auto" height="180" class="rounded-element px-2"> -->
+        <img src="Media/14.webp" width="auto" height="180" class="rounded-element px-2">
+        <img src="Media/16.webp" width="auto" height="180" class="rounded-element px-2">
+        <img src="Media/3D3.webp" width="auto" height="180" class="rounded-element px-2">
+        <!-- <img src="Media/15.webp" width="auto" height="180" class="rounded-element px-2"> -->
+        <img src="Media/8.webp" width="auto" height="180" class="rounded-element px-2">
+        <img src="Media/3D8.webp" width="auto" height="180" class="rounded-element px-2">
+        <!-- <img src="Media/18.webp" width="auto" height="180" class="rounded-element px-2"> -->
+        <img src="Media/19.webp" width="auto" height="180" class="rounded-element px-2">
+        <img src="Media/3D5.webp" width="auto" height="180" class="rounded-element px-2">
+        <!-- <img src="Media/22.webp" width="auto" height="180" class="rounded-element px-2"> -->
+        <img src="Media/20.webp" width="auto" height="180" class="rounded-element px-2">
+        <img src="Media/3D7.webp" width="auto" height="180" class="rounded-element px-2">
+        <img src="Media/21.webp" width="auto" height="180" class="rounded-element px-2">
+        <!-- <img src="Media/23.webp" width="auto" height="180" class="rounded-element px-2"> -->
+        <img src="Media/3D9.webp" width="auto" height="180" class="rounded-element px-2">
+        <!-- <img src="Media/24.webp" width="auto" height="180" class="rounded-element px-2"> -->
+      </div>
+      <div class="scrolling" aria-hidden="true">
+       <img src="Media/5.webp" width="auto" height="180" class="rounded-element px-2">
+       <img src="Media/3D4.webp" width="auto" height="180" class="rounded-element px-2">
+       <img src="Media/7.webp" width="auto" height="180" class="rounded-element px-2">
+       <img src="Media/3D12.webp" width="auto" height="180" class="rounded-element px-2">
+       <img src="Media/17.webp" width="auto" height="180" class="rounded-element px-2">
+       <img src="Media/3D10.webp" width="auto" height="180" class="rounded-element px-2">       
+       <img src="Media/10.webp" width="auto" height="180" class="rounded-element px-2">
+       <img src="Media/11.webp" width="auto" height="180" class="rounded-element px-2">
+       <img src="Media/3D2.webp" width="auto" height="180" class="rounded-element px-2">       
+       <img src="Media/14.webp" width="auto" height="180" class="rounded-element px-2">
+       <img src="Media/16.webp" width="auto" height="180" class="rounded-element px-2">
+       <img src="Media/3D3.webp" width="auto" height="180" class="rounded-element px-2">       
+       <img src="Media/8.webp" width="auto" height="180" class="rounded-element px-2">
+       <img src="Media/3D8.webp" width="auto" height="180" class="rounded-element px-2">
+       <img src="Media/19.webp" width="auto" height="180" class="rounded-element px-2">
+       <img src="Media/3D5.webp" width="auto" height="180" class="rounded-element px-2">
+       <img src="Media/20.webp" width="auto" height="180" class="rounded-element px-2">
+       <img src="Media/3D7.webp" width="auto" height="180" class="rounded-element px-2">
+       <img src="Media/21.webp" width="auto" height="180" class="rounded-element px-2">
+       <img src="Media/3D9.webp" width="auto" height="180" class="rounded-element px-2">
+      </div>
+    </section>
+    </section>
+    <div class="row m-0">
+      <div class="col-12 text-center">
+        <a href="#ourcaravan">
+          <svg class="arrows">
+            <path class="a1" d="M0 0 L30 32 L60 0"></path>
+            <path class="a2" d="M0 20 L30 52 L60 20"></path>
+            <path class="a3" d="M0 40 L30 72 L60 40"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+   
+
+    <a class="anchor" id="ourcaravan"></a>
+    <section class="py-3 p-md-4 m-3 m-md-4 black rounded-element text-center hidden1">
+      <div class="row m-0 px-lg-4 px-3">
+        <div class="col-12">
+          <h1>Our Caravan</h1>
+          <p class="mx-auto" style="max-width: 800px;"> The camels in our caravan were each generated by combining hundreds of attributes like fur, facial features, clothing, and accessories. 
+            Here's what they've looked like through the seasons.</p>
+        </div>
+      </div>
+
+      <div class="row text-justified m-0 p-3 p-md-4">
+        <div class="col-md-6 my-auto">
+          <div id="OG" role="button" tabIndex="0" class="mb-3 mt-0 py-3 px-2 var-season rounded-element thin-border black active-OG hidden1">
+            <div class="card-body">
+              <h5 class="m-0">Original (OG) Drop</h5>
+              <p class="card-text">The original camels that started it all</p>
+          </div>
+          </div>
+          <div id="WOF" role="button" tabIndex="0" class="my-3 py-lg-3 var-season rounded-element thin-border black hidden1">
+            <div class="card-body">
+              <h5 class="m-0">Camel Club: Wall of Fame</h5>
+              <p class="card-text">Our limited-edition parody collection that helped us raise 10,000₳ for charity </p>
+          </div>
+          </div>
+          <div id="3D" role="button" tabIndex="0" class="my-3 py-2 py-lg-3 var-season rounded-element thin-border black hidden1">
+            <div class="card-body">
+              <h5 class="m-0"> Camel Club: 3D</h5>
+              <p class="card-text"> Our beloved camels now in 3D with 130+ original traits. Coming soon! </p>
+            </div>
+          </div>
+
+        </div>
+        <div  class="col-md-6 align-items-center my-auto hidden1">
+          <img id="season-img" src="Media/OG.png" class="img-fluid rounded-element" alt="Sample OG Camel">
+        </div>
+      </div>
+    </section>
+
+    <a class="anchor" id="roadmap"></a>
+    <section class="p-3 p-md-4 m-3 m-md-4 black rounded-element">
+      <div class="row m-0 px-lg-4 text-center">
+        <div class="col-12 lg-px-4">
+          <h1>Roadmap</h1>
+          <p class="lightfw mx-auto" style="max-width: 800px"> We take pride in our transparency and will only promise what we can and will deliver. 
+            This roadmap is updated in real time. Check back for updates. </p>
+        </div>
+      </div>
+
+      <div class="row pl-4">
+        <div class="col-12 pl-4 px-lg-4">
+          <section>
+            <ul class="timeline pb-0">
+              <li class="timeline-item hidden1">
+                <h5 class="fw-bold mx-1 mb-0">Camel Club Beginings</h5>
+                <p class="mb-2 pt-0 lightfw">Early 2021</p>
+                  <ul class="lightfw">
+                    <li>Finalized Camel Club designs and artwork and generated 5000+ unique camels</li>
+                    <li>Gained verification on NFT marketplaces and rarity listing sites, like CNFT.io, CNFT.Tools, Wen CNFT, and CNFT Hub</li>
+                    
+                  </ul>
+              </li>
+          
+              <li class="timeline-item hidden1">
+                <h5 class="fw-bold mr-1 mb-0"> Initial Drops </h5>
+                <p class=" mb-2 pt-0 lightfw">2021</p>
+                <ul class="lightfw">
+                  <li>Launched Camel Club and donated 5% of the proceeds. Began designing our limited edition parody charity series - Camel Club: Wall of Fame</li>
+                  <li>Launched Camel Club: Wall of Fame and donated 50% of its proceeds</li>
+                </ul>
+              </li>
+          
+              <li class="timeline-item hidden1">
+                <h5 class="fw-bold mr-1">What We're Working on</h5>
+                <p class=" mb-2 pt-0 camel-text">2023 Q1</p>
+                <ul class="lightfw">
+                  <li> Growing our Camel Club community through recruitment and involment initiatives</li>
+                  <li>Staking Collaborations</li>
+                  <li class="p-0 camel-text"><h5>Camel Club 3D Launch</h5></li>
+                  <ul>
+                    <li class="p-0">WEN: TBA</li>
+                    <li class="p-0">HOW MUCH: 25 ADA</li>
+                    <li class="p-0">HOW MANY: 4000 NFTs</li>
+                    <li>ROYALTY: Split 10% royalties between holders and creators 50/50 (Airdropped per camel on an automatic weekly interval)</li>
+                  </ul>
+                  <li class="camel-text"><h5>$HUMP Token Drop</h5></li>
+                  <li>Implement 3D Camel Staking for $HUMP token on our website</li>
+                  <li>Begin <span class="camel-text">Camel Racing</span> Development - Bringing NFT based camel racing to Cardano</li>
+                  <li> Airdrop special lottery-style NFT prizes to holders from S1 and 3D. </li>
+                </ul>
+                <p class=" mb-2 pt-0 camel-text">2023 Q2</p>
+                <ul class="lightfw">
+                  <li class="camel-text"><h5>Camel Saddle NFT Launch</h5></li>
+                  <ul>
+                    <li>Limited number of camel saddles to be airdropped and sold</li>
+                    <li>Racers will need to hold both a 3D Camel NFT and a Camel Saddle NFT qualify for races</li>
+                    <li>Finalize development of Camel Racing NFT Game</li>
+                  </ul>
+                </ul>
+                <p class=" mb-2 pt-0 camel-text">2023 Q3</p>
+                <ul class="lightfw">
+                  <li>Projected Camel Racing Launch</li>
+                </ul>
+          
+              <li class="timeline-item mb-0 hidden1">
+                <h5 class="fw-bold mr-1 mb-0">Future Plans</h5>
+                <p class=" mb-2 pt-0 lightfw">2024 and beyond</p>
+                <ul class="lightfw">
+                  <li>TBD</li>
+                  <li>Exploring potential marketplace and metaverse opportunities</li>
+                  <li>Partnerships and collaboration with other CNFT projects</li>
+                </ul>
+              </li>
+            </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <a class="anchor" id="trade"></a>
+    <!-- <section class="mx-3 mx-md-4 text-center rounded-top-element white"> -->
+    <section class="text-center rounded-top-element white">
+      <div class="row m-0 pt-4 px-4">
+        <div class="col-12">
+          <h1>Where to Trade</h1>
+        </div>
+      </div>
+
+      <div class="row m-0 pt-2 pl-4 pr-4 pb-4">
+        <div id="jstore" class="col-sm-12 col-lg-4 my-1">
+          <a href="https://www.jpg.store/collection/camelclub" target="_blank">
+          <div class="card camel rounded-element grow-button hidden1">
+            <div class="card-body">
+              <h5 class="card-text">jpg.store</h5>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div id="ghouse" class="col-sm-12 col-lg-4 my-1">
+          <a href="https://www.genesishouse.io/collections/336" target="_blank">
+          <div  class="card camel rounded-element grow-button hidden1">
+            <div class="card-body">
+              <h5 class="card-text">genesishouse.io</h5>
+            </div>
+          </div>
+        </a>
+        </div>
+
+        <div id="cnft" class="col-sm-12 col-lg-4 my-1">
+          <a href="https://cnft.io/project/camel-club" target="_blank">
+          <div  class="card camel rounded-element grow-button hidden1">
+            <div class="card-body">
+              <h5 class="card-text">CNFT.io</h5>
+            </div>
+          </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <a class="anchor" id="FAQ"></a>
+    <section class="p-md-4 py-4 black rounded-top-element">
+      <div class="row m-0 px-4">
+        <div class="col-12">
+          <h1>FAQ</h1>
+        </div>
+      </div>
+
+      <div class="row m-0 p-4 border-top">
+        <div class="col-md-6 col-sm-12 text-left">
+          <h6>What are your policy IDs</h6>
+        </div>
+        <div class="col-md-6 col-sm-12 lightfw">
+          <p>Confirming policy IDs is a good practice to  ensure that you are getting an authentic Camel Club CNFT. </p>
+          
+          <div class="input-group mb-2 var-copy">
+            <p class="mr-4">Project ID: &emsp;</p>
+            <span class="input-group-text pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </span>
+            <input type="text" class="form-control" readonly value="0b19caa0bc17664b4ef0b769f146269c1400eba0174e9944a8745ff9">
+          </div>
+          
+          
+          <div class="input-group mb-2 var-copy">
+            <p class="mr-4">First Airdrop: </p>
+            <span class="input-group-text pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </span>
+            <input type="text" class="form-control" readonly value="0b0edfc13f89dd00031d65d2980f84abfe4de10b15227ba115b0b693">
+          </div>
+
+          <div class="input-group mb-2 var-copy">
+            <p class="mr-4">Wall of Fame: </p>
+            <span class="input-group-text pointer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#808080" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+            </span>
+            <input type="text" class="form-control" readonly value="6a12613c4600155096be236b70dd27d42aa7c553adf367f8da748e6c">
+          </div>
+        </div>
+      </div>
+
+      <div class="row m-0 p-4 border-top">
+        <div class="col-md-6 col-sm-12 text-left">
+          <h6>What rights do I get when I own a Camel Club NFT?</h6>
+        </div>
+        <div class="col-md-6 col-sm-12 text-justified lightfw">
+          <p> When you purchase a Camel Club NFT either directly from us or on the secondary market, you are the owner of that NFT. This grants you personal and commercial copyright the specific NFT to copy, display and distribute with no revenue limits. </p>
+          <p>However, this does not allow you to use Camel Club trademark, logo, or any Camel Club intellectual property.</p>
+        </div>
+      </div>
+
+      <div class="row m-0 p-4 border-top">
+        <div class="col-md-6 col-sm-12 text-left">
+          <h6>How do you ensure smooth launchs?</h6>
+        </div>
+        <div class="col-md-6 col-sm-12 text-justified lightfw">
+          <p>We work closely with NFT-Maker Pro, who have been behind both the famous unsigned_algorithms and The Hoskinsons launches. We perform rigorous testing to ensure that our members have the best possible experience.</p>
+        </div>
+      </div>
+
+      <div class="row m-0 p-4 border-top">
+        <div class="col-md-6 col-sm-12 text-left">
+          <h6>What are your charity efforts?</h6>
+        </div>
+        <div class="col-md-6 col-sm-12 text-justified lightfw">
+          <p>We're committed to giving back to those who need it most. That's why we donated 5% of S1 proceeds towards the Afghanistan Refugee Crisis Appeal and 50% of Wall of Fame proceeds to to Alder Hey Children’s Hospital and to Wild Camel Protection Foundation through a local safari partnership. 
+            Our current total charitable contribution is 16,000₳.</p>
+          <p>Proceeds from future series will continue to be donated towards <a href="https://www.effectivealtruism.org/">Effective Altruism</a> causes. Club memembers will vote on which specific charity proceeds from the 3D drop will go towards.</p>
+        </div>
+      </div>
+
+      <div class="row m-0 p-4 border-top">
+        <div class="col-md-6 col-sm-12 text-left">
+          <h6>Where can I get more information?</h6>
+        </div>
+        <div class="col-md-6 col-sm-12 text-justified lightfw">
+          <p>Specifics and how to get started can be found in our <a href="https://camel-club-cnft.gitbook.io/">docs</a></p>
+        </div>
+      </div>
+
+      <div class="row m-0 p-4 border-top">
+        <div class="col-md-6 col-sm-12 text-left">
+          <h6>Still Confused...</h6>
+        </div>
+        <div class="col-md-6 col-sm-12 text-justified lightfw">
+          <p>Join our <a href="https://discord.com/invite/ETfhby4j7m">discord</a> and shoot us a message. Our community is here to help.
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="p-4 text-center black">
+    <ul class="nav justify-content-center pb-2">
+      <li class="nav-item"><a href="https://camel-club-cnft.gitbook.io/" class="nav-link text-muted" target="_blank">Docs</a></li>
+      <li class="nav-item"><a  href="https://discord.com/invite/m8hsYUJ7" class="nav-link text-muted my-0 pb-0" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+          <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+        </svg>
+        </a>
+      </li>
+      <li class="nav-item"><a href="https://www.twitter.com/camelclubnft" class="nav-link text-muted my-0 pb-0" target="_blank">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+          <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+        </svg>
+        </a>
+      </li>
+    </ul>
+    
+    <p class="text-muted pt-2 m-0">© 2022 Camel Club</p>
+    <p class="text-muted m-0"> All Right Reserved</p>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script defer src="camelclub.js"></script>
+</body>
+</html>
