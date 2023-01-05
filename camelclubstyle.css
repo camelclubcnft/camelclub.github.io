@@ -320,7 +320,8 @@ ul.timeline{
 }
 
 span.side{
-  transform:rotateY(90deg);
+  display: inline-block;
+  transform:rotate(-90deg);
 }
 
 #season-img{
