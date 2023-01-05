@@ -34,7 +34,7 @@ a{
 }
 
 
-button{
+.b1{
   width: 100%;
   border-radius: 5px;
   padding: .25rem .5rem;
@@ -43,7 +43,7 @@ button{
   color: white;
 }
 
-button:disabled{
+.b1:disabled{
   background-color: inherit;
   color: #1010104D;
   border: 1px solid #1010104D;
@@ -251,7 +251,7 @@ ul.timeline{
 }
 
 .grow-button:hover, .grow-button:active, .grow-button:focus{
-  transform: scale(1.1);
+  transform: scale(1.05);
   background-color: white;
 }
 
