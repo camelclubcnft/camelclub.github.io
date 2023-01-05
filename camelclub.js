@@ -49,6 +49,11 @@ $(document).ready(function () {
   //     $(this).css("background", "var(--camel)");
   // });
 
+  $('#s1').on('click', function(){
+    $('#s1s').toggleClass('showStory')
+    $('span#pointer').toggleClass('side')
+  })
+
   $(".var-copy").bind("keydown click", function () {
     const elm = $(this).find("input");
     const v = elm.val();

@@ -31,6 +31,17 @@ a{
   color: var(--camel);
 }
 
+button{
+  border-radius: 5px;
+  padding: .25rem .5rem;
+  border-color: transparent;
+  background-color: var(--black);
+  color: var(--camel);
+}
+
+button:enabled:hover{
+  color: white;
+}
 a:hover {
   color: white;
   text-decoration: none;
@@ -134,8 +145,13 @@ a:hover {
   color: var(--black);
 }
 
+
 .camel-text{
-  color: var(--camel)
+  color: var(--camel);
+}
+
+.black-text{
+  color: var(--black);
 }
 
 .var-season{
@@ -158,8 +174,7 @@ a:hover {
 
 .active-3D{
   background-color: #61544a;
-  background-image: radial-gradient(#63574f, #50443d);
-  color: var(--black);
+  background-image: radial-gradient(#63574f, #3c3733);
   border-color: #ffffff50 !important;
 }
 
@@ -271,6 +286,42 @@ ul.timeline{
 /* #scroller{
   background-color: #ecc67561;
 } */
+
+#storyContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card{
+  border-color: var(--camel);
+}
+
+.card-img-top{
+  height: 300px;
+  object-fit:cover;
+}
+
+.story{
+  min-width: 200px;
+  width: 100% !important;
+  margin: 1rem;
+}
+
+.storytext{
+  display: none;
+  margin: 0 1rem;
+  border: 1px solid var(--camel);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.showStory{
+  display: block;
+}
+
+span.side{
+  transform:rotateY(90deg);
+}
 
 #season-img{
   max-height: 400px;
@@ -397,6 +448,14 @@ ul.timeline{
 
   .form-inline{
     justify-content: center;
+  }
+
+  #storyContainer{
+    overflow-x: scroll;
+  }
+
+  .card-img-top{
+    height: 150px;
   }
 }
 
